@@ -172,10 +172,10 @@ html #header .header-logo.custom-header-logo {
 html #header .header-logo.custom-header-logo:before {
 		content: '';
 		position: absolute;
-		bottom: -74px;
-		left: 60px;
-		width: 170px;
-		height: 365px;
+		bottom: -65px;
+		left: 66px;
+		width: 140px;
+		height: 338px;
 		background-color: #CCC;
 		opacity: 1;
 		visibility: visible;
@@ -194,7 +194,7 @@ html #header .header-logo .logo-sticky {
 }
 
 html #header .header-container {
-		height: 120px;
+		height: 100px;
 		transition: ease height 300ms;
 }
 
