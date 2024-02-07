@@ -236,6 +236,6 @@ if (!$mail->send()) {    ?>
 <?php
 }
 ?>
-<script language="javascript">
+<!-- <script language="javascript">
    window.open("index.html", "_self");
-</script>
+</script> -->
