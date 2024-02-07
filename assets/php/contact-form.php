@@ -24,8 +24,8 @@ $mail = new PHPMailer();
 $mail->isSMTP();
 $mail->Host = 'smtp.hostinger.com'; // Update with the Hostinger SMTP server
 $mail->SMTPAuth = true;
-$mail->Username = 'info@lightandbath.com'; // Your Hostinger email address
-$mail->Password = 'Ligh&bath@123'; // Your Hostinger email password
+$mail->Username = 'enquiry@charotarwindowgallery.com'; // Your Hostinger email address
+$mail->Password = 'Charotar@123'; // Your Hostinger email password
 $mail->SMTPSecure = 'tls';
 $mail->Port = 587;
 
@@ -33,17 +33,17 @@ $name = $_REQUEST['name'];
 $email = $_REQUEST['email'];
 $subject = $_REQUEST['subject'];
 $number = $_REQUEST['number'];
-$body = $_REQUEST['body'];
+$body = $_REQUEST['message'];
 
 //Recipients
-$mail->setFrom('info@lightandbath.com', 'Contact Us');
+$mail->setFrom('enquiry@charotarwindowgallery.com', 'Contact Us');
 $mail->addAddress($email, $name);
-$mail->addAddress('info@lightandbath.com', 'Contact Us');
+$mail->addAddress('enquiry@charotarwindowgallery.com', 'Contact Us');
 
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "light";
+$database = "cwg_database";
 
 // $servername = "127.0.0.1:3306";
 // $username = "u768511311_riti2023";
@@ -57,11 +57,11 @@ if (!$conn) {
    die("Connection failed: " . mysqli_connect_error());
 }
 // echo "Connected successfully";
-
+echo "$number";
 $sql = "INSERT INTO `contact` (`name`, `contact`, `email`, `subject`, `message`, `createdate`) VALUES
     ('$name', '$number', '$email', '$subject', '$body', CURRENT_TIMESTAMP);";
 if (mysqli_query($conn, $sql)) {
-//    echo "New record created successfully";
+
 } else {
    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
@@ -236,6 +236,6 @@ if (!$mail->send()) {    ?>
 <?php
 }
 ?>
-<script language="javascript">
+<!-- <script language="javascript">
    window.open("index.html", "_self");
-</script>
+</script> -->

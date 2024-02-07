@@ -454,7 +454,7 @@
                             <p class="text-2 line-height-9">Contact us sending a message or give us a call to discover
                                 how we can help. </p>
 
-                            <form class="contact-form form-style-3" action="php/contact-form.php" method="POST">
+                            <form class="contact-form form-style-3" action="assets/php/contact-form.php" method="POST">
                                 <div class="contact-form-success alert alert-success d-none mt-4">
                                     <strong>Success!</strong> Your message has been sent to us.
                                 </div>
@@ -489,9 +489,17 @@
                                 </div>
                                 <div class="row">
                                     <div class="form-group col mb-3-5">
+                                        <input type="number" value=""
+                                            data-msg-required="Please enter your phone number." maxlength="100"
+                                            class="form-control text-2 h-auto py-2-5" name="phone"
+                                            placeholder="Your phone number" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col mb-3-5">
                                         <textarea maxlength="5000" data-msg-required="Please enter your message."
                                             rows="4" class="form-control text-2 h-auto py-2-5" name="message"
-                                            placeholder="Message" required></textarea>
+                                            id="message" placeholder="Message" required></textarea>
                                     </div>
                                 </div>
                                 <div class="row">
