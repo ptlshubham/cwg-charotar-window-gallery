@@ -123,7 +123,7 @@ $mail_body .= '<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-m
                                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
                                                                       <tbody>
                                                                          <tr>
-                                                                            <td style="font-family: Open Sans, Helvetica, Tahoma, Arial, sans-serif;width: 160px;" width="160"> <a href="https://ritithings.com/" target="_blank" style="font-family: Open Sans, Helvetica, Tahoma, Arial, sans-serif; padding: 0 10px;"> <img alt="Riti Things" height="auto" href="https://ritithings.com/" src="https://ritithings.com/assets/images/color.png" alt="Riti Things" border="0" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="160"> </a> </td>
+                                                                            <td style="font-family: Open Sans, Helvetica, Tahoma, Arial, sans-serif;width: 160px;" width="160"> <a href="https://charotarwindowgallery.com/" target="_blank" style="font-family: Open Sans, Helvetica, Tahoma, Arial, sans-serif; padding: 0 10px;"> <img alt="Charotar Window Gallery" height="auto" href="https://charotarwindowgallery.com/" src="https://charotarwindowgallery.com/assets/img/demos/construction/footer-logo.png" alt="Charotar Window Gallery" border="0" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="160"> </a> </td>
                                                                          </tr>
                                                                       </tbody>
                                                                    </table>
@@ -200,7 +200,7 @@ $mail_body .= '<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-m
                                                                 <tr>
                                                                    <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                                                                       <div style="font-family:OpenSans, Helvetica, Tahoma, Arial, sans-serif;font-size:12px;font-weight:400;line-height:20px;text-align:center;color:#4F4F4F;">
-                                                                         <br /> &copy; 2023 Riti Things. All rights reserved.
+                                                                         <br /> &copy; 2023 Charotar Window Gallery. All rights reserved.
                                                                          <br />
                                                                       </div>
                                                                    </td>
@@ -237,5 +237,5 @@ if (!$mail->send()) {    ?>
 }
 ?>
 <!-- <script language="javascript">
-   window.open("index.html", "_self");
+   window.open("https://charotarwindowgallery.com/", "_self");
 </script> -->
