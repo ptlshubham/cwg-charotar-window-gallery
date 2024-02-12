@@ -456,7 +456,7 @@
 							<p class="text-2 line-height-9">Contact us sending a message or give us a call to discover
 								how we can help. </p>
 
-							<form class="contact-form form-style-3" action="php/contact-form.php" method="POST">
+							<form class="contact-form form-style-3" action="assets/php/contact-form.php" method="POST">
 								<div class="contact-form-success alert alert-success d-none mt-4">
 									<strong>Success!</strong> Your message has been sent to us.
 								</div>
@@ -491,9 +491,17 @@
 								</div>
 								<div class="row">
 									<div class="form-group col mb-3-5">
+										<input type="number" value=""
+											data-msg-required="Please enter your phone number." maxlength="100"
+											class="form-control text-2 h-auto py-2-5" name="number" id="number"
+											placeholder="Your phone number" required>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col mb-3-5">
 										<textarea maxlength="5000" data-msg-required="Please enter your message."
 											rows="4" class="form-control text-2 h-auto py-2-5" name="message"
-											placeholder="Message" required></textarea>
+											id="message" placeholder="Message" required></textarea>
 									</div>
 								</div>
 								<div class="row">
@@ -503,7 +511,7 @@
 											data-loading-text="Loading...">
 											Submit
 											<img width="27" height="27"
-												src="img/demos/construction/arrow-right.svg" alt="" data-icon
+												src="assets/img/demos/construction/arrow-right.svg" alt="" data-icon
 												data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light ms-2'}" />
 										</button>
 									</div>
@@ -595,7 +603,8 @@
 				<div class="footer-copyright bg-transparent pb-5 mt-5-5">
 					<div class="row pb-5">
 						<div class="col text-center mb-5">
-							<p class="text-color-grey text-3 mb-3">© 2024 All rights reserved by Charotar Window Gallery. Develop by Shubhavi Infotech </p>
+							<p class="text-color-grey text-3 mb-3">© 2024 All rights reserved by Charotar Window
+								Gallery. Develop by Shubhavi Infotech </p>
 							<ul class="footer-social-icons social-icons social-icons-clean social-icons-medium mb-5">
 								<li class="social-icons-instagram">
 									<a href="https://www.instagram.com/charotarwindowgallery/?igsh=OGQ5ZDc2ODk2ZA%3D%3D"
